@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-mojw
+  namespace: brianwcook-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3ef8423b03a760d5664ef1eaa9ff1498216e1942828bb6159fd9a6909bfd0ac8
+        name: my-python
+        resources: {}
+status: {}
