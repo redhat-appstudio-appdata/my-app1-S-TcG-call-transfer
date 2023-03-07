@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-tyfg
+  namespace: brianwcook-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:77d74b80c98f883e3022bd2c9962153447493b36929e31069bffc4cba685c5dc
+        name: my-go
+        resources: {}
+status: {}
